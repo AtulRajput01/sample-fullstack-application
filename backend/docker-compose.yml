@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  backend:
+    image: backend-image
+    ports:
+      - "3001:3001"
+    environment:
+      - REDIS_HOST=redis  # Use the service name of Redis
+      - REDIS_PORT=6379
+      - DATABASE_URL=postgresql://atul:atul@localhost:5432/atul
+    depends_on:
+      - redis
+
+  redis:
+    image: redis
+    container_name: my-redis  # Optional: You can name your Redis container
