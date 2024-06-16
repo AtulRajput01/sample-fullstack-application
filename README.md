@@ -58,3 +58,7 @@ Run the following command to build the Docker images and start the application:
 ```sh
 sudo docker-compose up --build
 ```
+
+![Screenshot from 2024-06-16 07-56-23](https://github.com/AtulRajput01/sample-fullstack-application/assets/92659293/fc2a9400-a864-42db-98c9-b303ae2e945a)
+
+
