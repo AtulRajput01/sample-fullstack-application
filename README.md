@@ -30,3 +30,31 @@ This repository contains a fully dockerized full stack application with a CI Pip
 ### Prerequisites
 - Docker
 - Docker Compose
+
+### Instructions
+
+1. **Clone the Repository**
+
+   ```sh
+   git clone https://github.com/AtulRajput01/sample-fullstack-application.git
+   cd sample-fullstack-application
+
+## Create a .env File
+
+- Create a .env file in the root directory of the project with the following content. Adjust the values as per your environment:
+
+```sh
+POSTGRES_USER=c4gt
+POSTGRES_PASSWORD=c4gt
+POSTGRES_DB=c4gt
+DATABASE_URL=postgresql://c4gt:c4gt@postgres:5432/c4gt
+REDIS_URL=redis://redis:6379
+```
+
+## Build and Run the Application
+
+Run the following command to build the Docker images and start the application:
+
+```sh
+sudo docker-compose up --build
+```
